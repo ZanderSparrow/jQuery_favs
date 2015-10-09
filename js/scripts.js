@@ -1,10 +1,24 @@
 $(function() {
+	//Global variables
 	var favorites = [];
 	var userName = '';
+
+	//Callback functions to process favorites
+	function liWrapped(text) {
+		return '<li>' + text + '</li>';
+	}
+
+	function appendLiToOutputUl(li) {
+		$('#output ul').append(li);
+	}
+
+	//Event listener for add button
 	$('button#add').click(function () {
 		var newFavorite = $('input#appendInputButton').val();
 		favorites.push( newFavorite );
 	});
+
+	//Event listener for submit button
 	$('#submit').click(function(event) {
 		event.preventDefault();
 		userName = $('#user-name').val();
@@ -14,10 +28,9 @@ $(function() {
 		} else {
 			$('#output h2').text( userName + "'s favorites:" );
 		}
+		//Use callbacks to wrap array in li and append each item to output ul
+		favorites.map(liWrapped).forEach(appendLiToOutputUl);
 
-		//use favorites.map and a callback to:
-			//1. wrap each item in an li tag
-			//2. append the item to the #output ul 
 		$('#output').show();
 	});
 });
