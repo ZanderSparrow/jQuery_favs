@@ -3,6 +3,9 @@ $(function() {
 	var favorites = [];
 	var userName = '';
 
+	//Clear name when page is refreshed
+	$('input#user-name').val('');
+
 	//Callback functions to process favorites
 	function liWrapped(text) {
 		return '<li>' + text + '</li>';
@@ -31,6 +34,7 @@ $(function() {
 		}
 		//Use callbacks to wrap array in li and append each item to output ul
 		favorites.map(liWrapped).forEach(appendLiToOutputUl);
+		//Clear array
 		favorites = [];
 
 		$('#output').show();
