@@ -2,3 +2,24 @@
 	display: none;
 	float: right;
 }
+
+.day {
+	color: #222;
+	background-color: #eee;
+	border-radius: 10%;
+}
+
+.night {
+	color: #eee;
+	background-color: #222;
+	border-radius: 10%;
+}
+
+button.selected {
+	border: 1px solid red;
+}
+
+button.btn-link {
+	float: right;
+	min-width: 60px;
+}
