@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-	<link href="css/styles.css" type="text/css" rel="stylesheet" media="all">
-	<script src="js/jquery.js"></script>
-	<script src="js/scripts.js"></script>
-	<title>jQuery Code Review</title>
-</head>
-<body>
-	<div class="container">
-		<header id="overview" class="jumbotron subhead">
-			<div class="container">
-				<h1>List your favorites</h1>
-				<p class="lead">Create a personalized list of your favorite things.</p>
-			</div>
-		</header>
-		<div class="favs-form"></div>
-		<div class="output">
-			<ul></ul>
-		</div>
-	</div>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/styles.css" type="text/css" rel="stylesheet" media="all">
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>jQuery Code Review</title>
+    </head>
+  <body>
+    <div class="container">
+      <header id="overview" class="jumbotron subhead">
+        <div class="container">
+          <h1>List your favorites</h1>
+          <p class="lead">Create a personalized list of your favorite things.</p>
+        </div>
+      </header>
+      <div class="row"></div>
+        <div id="favs-form" class="span4">
+          <form>
+            <fieldset>
+              <p>Name: <input type="text" id="user-name" placeholder="Type your name..." name="name"></p>
+              <span class="help-block">Add as many favorites as you'd like below, and click <span class="btn-name">Display my favorites</span> to see your list.</span>
+              <div class="input-append">
+                <input class="span2" id="appendInputButton" type="text" placeholder="Add a favorite...">
+                <button class="btn" type="button">Add!</button>
+              </div>
+              <button type="submit" class="btn btn-primary">Display my favorites</button>
+            </fieldset>
+          </form>
+        </div>
+        <div id="output" class="span8">
+          <ul></ul>
+        </div>
+      </div>
+  </body>
 </html>
