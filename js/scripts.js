@@ -39,4 +39,27 @@ $(function() {
 
 		$('#output').show();
 	});
+
+	//Event listener for clear button
+	$('#clear').click(function() {
+		favorites = [];
+		$('input#appendInputButton').val('');
+		$('input#user-name').val('');
+	});
+
+	//Event listener for day button
+	$('button.day').click(function() {
+		$('body').removeClass();
+		$('body').addClass('day');
+		$(this).addClass('selected');
+		$(this).siblings().removeClass('selected');
+	});
+
+	//Event listener for night button
+	$('button.night').click(function() {
+		$('body').removeClass();
+		$('body').addClass('night');
+		$(this).addClass('selected');
+		$(this).siblings().removeClass('selected');
+	});
 });
