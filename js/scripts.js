@@ -16,6 +16,7 @@ $(function() {
 	$('button#add').click(function () {
 		var newFavorite = $('input#appendInputButton').val();
 		favorites.push( newFavorite );
+		$('input#appendInputButton').val('');
 	});
 
 	//Event listener for submit button
@@ -30,6 +31,7 @@ $(function() {
 		}
 		//Use callbacks to wrap array in li and append each item to output ul
 		favorites.map(liWrapped).forEach(appendLiToOutputUl);
+		favorites = [];
 
 		$('#output').show();
 	});
