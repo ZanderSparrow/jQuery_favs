@@ -29,3 +29,9 @@ button.btn-link:hover {
 	font-size: 1.1em;
 	text-decoration: none;
 }
+
+#output ul li {
+	font-size: 1.5em;
+	line-height: 1.5em;
+	padding-left: 5px;
+}
