@@ -10,7 +10,8 @@ _This third code review is a demonstration of basic jQuery. The user inputs thei
 
 ## Setup
 
-* _Here is the explanation of how it works_ 
+* _User can create a list of favorite things. Add as many items as you'd like, then click Display my favorites to display the list. More items can be added to a displayed list by adding them and then clicking display again. Click the Start Over button to both clear fields and the list._ 
+* _Day and night settings change between dark text on a light background and light text on a dark background._
 * _Please visit [my gh_pages site](http://zandersparrow.github.io/jQuery_favs/ "gh-pages site for jQuery_favs repository")_
 * _The code is available in my jQuery_favs repository on GitHub, handle ZanderSparrow_
 
