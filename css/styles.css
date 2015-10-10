@@ -1,37 +1,37 @@
 #output {
-	display: none;
-	float: right;
+  display: none;
+  float: right;
 }
 
 .day {
-	color: #222;
-	background-color: #eee;
-	border-radius: 10%;
+  color: #222;
+  background-color: #eee;
+  border-radius: 10%;
 }
 
 .night {
-	color: #eee;
-	background-color: #222;
-	border-radius: 10%;
+  color: #eee;
+  background-color: #222;
+  border-radius: 10%;
 }
 
 button.selected {
-	border: 1px solid red;
+  border: 1px solid red;
 }
 
 button.btn-link {
-	float: right;
-	min-width: 60px;
+  float: right;
+  min-width: 60px;
 }
 
 button.btn-link:hover {
-	font-weight: bold;
-	font-size: 1.1em;
-	text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-decoration: none;
 }
 
 #output ul li {
-	font-size: 1.5em;
-	line-height: 1.5em;
-	padding-left: 5px;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding-left: 5px;
 }
